@@ -35,4 +35,4 @@ set -e
 # gawk '{ trimmed = substr($0, 1, length($0) - 2) ; print "\"" trimmed "\"" }'
 # )
 
-circuitpython-build-bundles --filename_prefix qwiic-py --library_location qwiic/circuitpython --library_depth 2 --package_folder_prefix "Qwiic, qwiic, Pi" 
+circuitpython-build-bundles --filename_prefix qwiic-py --library_location qwiic/circuitpython --library_depth 1 --package_folder_prefix "Qwiic, qwiic, Pi" 
