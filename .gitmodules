@@ -113,3 +113,6 @@
 	path = qwiic/drivers/qwiic_otos
 	url = https://github.com/sparkfun/Qwiic_OTOS_Py
 
+[submodule "qwiic/circuitpython/Qwiic_SerLCD_Py"]
+	path = qwiic/circuitpython/Qwiic_SerLCD_Py
+	url = git@github.com:sparkfun/Qwiic_SerLCD_Py.git
