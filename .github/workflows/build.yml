@@ -17,7 +17,7 @@ jobs:
       with:
         submodules: true
     - name: Fetch correct submodule shas
-      run: git submodule foreach 'git fetch --tags --depth=500 origin $sha1 && git checkout -q $sha1'
+      run: git submodule foreach 'git fetch --tags --depth 1 origin $sha1 && git checkout -q $sha1'
     - name: Install deps
       run: |
         sudo apt-get install -y gettext gawk
