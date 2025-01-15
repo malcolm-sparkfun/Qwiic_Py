@@ -1,2 +1,2 @@
-Qwiic_SerLCD_Py
-Qwiic_Alphanumeric_Py
+qwiic_serlcd
+qwiic_alphanumeric
