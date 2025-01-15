@@ -113,3 +113,6 @@
 [submodule "qwiic/circuitpython/Qwiic_SerLCD_Py"]
 	path = qwiic/circuitpython/Qwiic_SerLCD_Py
 	url = git@github.com:sparkfun/Qwiic_SerLCD_Py.git
+[submodule "qwiic/supported_circuitpython/qwiic_serlcd"]
+	path = qwiic/supported_circuitpython/qwiic_serlcd
+	url = git@github.com:sparkfun/Qwiic_SerLCD_Py.git
