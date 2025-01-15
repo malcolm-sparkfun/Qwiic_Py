@@ -116,3 +116,12 @@
 [submodule "qwiic/circuitpython/Qwiic_SerLCD_Py"]
 	path = qwiic/circuitpython/Qwiic_SerLCD_Py
 	url = git@github.com:sparkfun/Qwiic_SerLCD_Py.git
+[submodule "qwiic/drivers/Qwiic_SerLCD_Py"]
+	path = qwiic/drivers/Qwiic_SerLCD_Py
+	url = https://github.com/sparkfun/Qwiic_SerLCD_Py.git
+[submodule "qwiic/drivers/Qwiic_Button_Py"]
+	path = qwiic/drivers/Qwiic_Button_Py
+	url = https://github.com/sparkfun/Qwiic_Button_Py.git
+[submodule "qwiic/drivers/Qwiic_Alphanumeric_Py"]
+	path = qwiic/drivers/Qwiic_Alphanumeric_Py
+	url = https://github.com/sparkfun/Qwiic_Alphanumeric_Py.git
