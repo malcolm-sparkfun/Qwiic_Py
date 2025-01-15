@@ -26,13 +26,7 @@
 
 set -e
 
-# Below way extracted comma-separated list of package folder prefixes automatically, but it's not working as expected
-# Also we know explicitly what package folder prefixes are used in the our libraries. Keeping this here in case we end up 
-# using it in future. 
-# P=$(
-# ls -RUx |
-# gawk -F '\n' '{ match($1, /(drivers|helpers)\/(.+)\/(.+)\:/, arr) ; if (length(arr[0]) > 0 && match(arr[3], arr[2]) > 0) printf "%s, ", arr[3] }' |
-# gawk '{ trimmed = substr($0, 1, length($0) - 2) ; print "\"" trimmed "\"" }'
-# )
-
-circuitpython-build-bundles --filename_prefix qwiic-py --library_location qwiic/circuitpython --library_depth 1 --package_folder_prefix "Qwiic, qwiic, Pi" 
+# This script gets executed in "test" steps for non-release builds. See the "Build assets" step in release.yml for the build of actual release artifacts
+# Gather the package submods that are supported in CircuitPython and create a comma-separated string to pass to circuitpython-build-bundles
+CIRCUP_DIRS="\"$(paste -sd ',' circuitpython_support.txt | sed 's/,/, /g')\""
+circuitpython-build-bundles --filename_prefix qwiic-py --library_location qwiic/drivers --library_depth 1 --package_folder_prefix $CIRCUP_DIRS
