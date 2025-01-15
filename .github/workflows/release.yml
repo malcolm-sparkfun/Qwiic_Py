@@ -33,7 +33,7 @@ jobs:
         sudo apt-get install -y gettext gawk
         pip install -r requirements.txt
     - name: Build assets
-      run: circuitpython-build-bundles --filename_prefix ${{ steps.repo-name.outputs.repo-name }} --library_location qwiic/drivers --library_depth 1 --package_folder_prefix qwiic_serlcd, 
+      run: circuitpython-build-bundles --filename_prefix ${{ steps.repo-name.outputs.repo-name }} --library_location qwiic/supported_circuitpython --library_depth 1 --package_folder_prefix qwiic_serlcd, 
     - name: Upload Release Assets
       uses: shogo82148/actions-upload-release-asset@v1
       with:
