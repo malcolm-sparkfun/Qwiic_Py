@@ -28,6 +28,6 @@ set -e
 
 # This script gets executed in "test" steps for non-release builds. See the "Build assets" step in release.yml for the build of actual release artifacts
 # Gather the package submods that are supported in CircuitPython and create a comma-separated string to pass to circuitpython-build-bundles
-CIRCUP_DIRS="\"$(paste -sd ',' circuitpython_support.txt | sed 's/,/, /g')\""
+CIRCUP_DIRS="$(paste -sd ',' circuitpython_support.txt | sed 's/,/, /g')"
 echo "FOUND CIRCUP DIRS: ${CIRCUP_DIRS}"
-circuitpython-build-bundles --filename_prefix qwiic-py --library_location qwiic/drivers --library_depth 1 --package_folder_prefix $CIRCUP_DIRS
+circuitpython-build-bundles --filename_prefix qwiic-py --library_location qwiic/drivers --library_depth 1 --package_folder_prefix "$CIRCUP_DIRS"
