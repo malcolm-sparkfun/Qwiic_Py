@@ -36,7 +36,7 @@ jobs:
       run: |
         # CIRCUP_DIRS="$(paste -sd ',' circuitpython_support.txt | sed 's/,/, /g')" |
         # echo "Build assets dirs: ${CIRCUP_DIRS}" |
-        circuitpython-build-bundles --filename_prefix ${{ steps.repo-name.outputs.repo-name }} --library_location qwiic/drivers --library_depth 1 --package_folder_prefix "qwiic_alphanumeric, qwiic_serlcd"
+        circuitpython-build-bundles --filename_prefix ${{ steps.repo-name.outputs.repo-name }} --library_location qwiic/drivers --library_depth 1 --package_folder_prefix "nonsense"
     - name: Upload Release Assets
       uses: shogo82148/actions-upload-release-asset@v1
       with:
