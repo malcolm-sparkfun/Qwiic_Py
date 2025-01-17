@@ -119,3 +119,6 @@
 [submodule "qwiic/supported_circuitpython/qwiic_serlcd"]
 	path = qwiic/supported_circuitpython/qwiic_serlcd
 	url = git@github.com:sparkfun/Qwiic_SerLCD_Py.git
+[submodule "qwiic/supported_circuitpython/Qwiic_OPT4048_Py_Test"]
+	path = qwiic/supported_circuitpython/Qwiic_OPT4048_Py_Test
+	url = https://github.com/malcolm-sparkfun/Qwiic_OPT4048_Py_Test.git
