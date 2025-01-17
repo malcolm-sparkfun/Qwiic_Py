@@ -1,2 +1,3 @@
 circuitpython-build-tools
 setuptools
+sparkfun_qwiic_i2c
