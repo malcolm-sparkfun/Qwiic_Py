@@ -122,3 +122,6 @@
 [submodule "qwiic/supported_circuitpython/Qwiic_OPT4048_Py_Test"]
 	path = qwiic/supported_circuitpython/Qwiic_OPT4048_Py_Test
 	url = https://github.com/malcolm-sparkfun/Qwiic_OPT4048_Py_Test.git
+[submodule "qwiic/supported_circuitpython/qwiic_i2c"]
+	path = qwiic/supported_circuitpython/qwiic_i2c
+	url = https://github.com/sparkfun/Qwiic_I2C_Py.git
