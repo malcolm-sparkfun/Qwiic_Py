@@ -122,3 +122,6 @@
 [submodule "qwiic/supported_circuitpython/qwiic_i2c"]
 	path = qwiic/supported_circuitpython/qwiic_i2c
 	url = https://github.com/malcolm-sparkfun/Qwiic_I2C_Py_Test.git
+[submodule "qwiic/supported_circuitpython/qwiic_vl53l5cx_beta_test"]
+	path = qwiic/supported_circuitpython/qwiic_vl53l5cx_beta_test
+	url = git@github.com:malcolm-sparkfun/qwiic_vl53l5cx_beta_test.git
